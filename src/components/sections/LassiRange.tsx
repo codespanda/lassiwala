@@ -26,9 +26,9 @@ export function LassiRange() {
                   src={f.img}
                   alt={f.name}
                   loading="lazy"
-                  width={150}
-                  height={166}
-                  className="aspect-[150/166] w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  width={300}
+                  height={300}
+                  className="aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
                 />
               </div>
               <div className="px-2 pb-4 pt-3 text-center">

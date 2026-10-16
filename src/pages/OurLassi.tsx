@@ -97,7 +97,7 @@ function ProductCard({ flavor: f }: { flavor: Flavor }) {
           src={f.img}
           alt={f.name}
           loading="lazy"
-          className="mx-auto aspect-[150/140] w-full object-cover object-top transition-transform duration-500 group-hover:scale-105"
+          className="mx-auto aspect-square w-full object-cover transition-transform duration-500 group-hover:scale-105"
         />
         {f.bestseller && (
           <Badge variant="secondary" className="absolute left-3 top-3 shadow">
