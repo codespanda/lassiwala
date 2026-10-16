@@ -4,8 +4,8 @@ import react from "@vitejs/plugin-react"
 import tailwindcss from "@tailwindcss/vite"
 
 export default defineConfig({
-  // GitHub Pages serves the site from /<repo>/
-  base: process.env.GITHUB_PAGES ? "/lassiwala/" : "/",
+  // served from the root of lassiwala.codespanda.com; set BASE_PATH=/repo/ to host under a sub-path instead
+  base: process.env.BASE_PATH ?? "/",
   plugins: [react(), tailwindcss()],
   resolve: { alias: { "@": path.resolve(__dirname, "./src") } },
   // native file events are unreliable on this Windows drive, so poll for changes
